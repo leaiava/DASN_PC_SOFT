@@ -1,0 +1,2329 @@
+[1] : <Info> - 07:08:33.162
+Port opened at 24/3/2022 19:08:33
+--------------------------------------------------------------------
+[2] : <Tx> - 07:08:33.209
+-Type           : 0x01 (Command)
+-OpCode         : 0xFC1D (HCIExt_ResetSystemCmd)
+-Data Length    : 0x01 (1) byte(s)
+ Type           : 0x00 (0) (Chip Reset)
+Dump(Tx):
+0000:01 1D FC 01 00                                  .....
+--------------------------------------------------------------------
+[3] : <Rx> - 07:08:33.522
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x05 (5) bytes(s)
+ Event          : 0x041D (1053) (HCIExt_ResetSystemCmdDone)
+ Status         : 0x00 (0) (SUCCESS)
+ CmdOpCode      : 0xFC1D (HCIExt_ResetSystemCmd)
+Dump(Rx):
+0000:04 FF 05 1D 04 00 1D FC                         ........
+--------------------------------------------------------------------
+[4] : <Tx> - 07:08:34.037
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE00 (GAP_DeviceInit)
+-Data Length    : 0x26 (38) byte(s)
+ ProfileRole    : 0x08 (8) (
+                  Central)
+ MaxScanRsps    : 0x14 (20)
+ IRK            : 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+ CSRK           : 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+ SignCounter    : 0x00000001 (1)
+Dump(Tx):
+0000:01 00 FE 26 08 14 00 00 00 00 00 00 00 00 00 00 ...&............
+0010:00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ................
+0020:00 00 00 00 00 00 01 00 00 00                   ..........
+--------------------------------------------------------------------
+[5] : <Rx> - 07:08:34.131
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE00 (GAP_DeviceInit)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 00 FE 00                      .........
+--------------------------------------------------------------------
+[6] : <Rx> - 07:08:34.147
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x2C (44) bytes(s)
+ Event          : 0x0600 (1536) (GAP_DeviceInitDone)
+ Status         : 0x00 (0) (SUCCESS)
+ DevAddr        : 54:6C:0E:9B:57:33
+ DataPktLen     : 0x00FF (255)
+ NumDataPkts    : 0x05 (5)
+ IRK            : F2:50:43:88:08:84:42:2B:4A:AC:34:38:B0:35:11:24
+ CSRK           : 5D:C5:CA:11:CF:56:80:25:14:64:9E:DF:ED:64:0E:D6
+Dump(Rx):
+0000:04 FF 2C 00 06 00 33 57 9B 0E 6C 54 FF 00 05 F2 ..,...3W..lT....
+0010:50 43 88 08 84 42 2B 4A AC 34 38 B0 35 11 24 5D PC...B+J.48.5.$]
+0020:C5 CA 11 CF 56 80 25 14 64 9E DF ED 64 0E D6    ....V.%.d...d..
+--------------------------------------------------------------------
+[7] : <Tx> - 07:08:34.162
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE31 (GAP_GetParamValue)
+-Data Length    : 0x01 (1) byte(s)
+ ParamID        : 0x15 (21) (TGAP_CONN_EST_INT_MIN)
+Dump(Tx):
+0000:01 31 FE 01 15                                  .1...
+--------------------------------------------------------------------
+[8] : <Tx> - 07:08:34.193
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE31 (GAP_GetParamValue)
+-Data Length    : 0x01 (1) byte(s)
+ ParamID        : 0x16 (22) (TGAP_CONN_EST_INT_MAX)
+Dump(Tx):
+0000:01 31 FE 01 16                                  .1...
+--------------------------------------------------------------------
+[9] : <Tx> - 07:08:34.209
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE31 (GAP_GetParamValue)
+-Data Length    : 0x01 (1) byte(s)
+ ParamID        : 0x1A (26) (TGAP_CONN_EST_LATENCY)
+Dump(Tx):
+0000:01 31 FE 01 1A                                  .1...
+--------------------------------------------------------------------
+[10] : <Rx> - 07:08:34.209
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE31 (GAP_GetParamValue)
+ DataLength     : 0x02 (2)
+ ParamValue     : 0x0050 (80)
+Dump(Rx):
+0000:04 FF 08 7F 06 00 31 FE 02 50 00                ......1..P.
+--------------------------------------------------------------------
+[11] : <Tx> - 07:08:34.225
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE31 (GAP_GetParamValue)
+-Data Length    : 0x01 (1) byte(s)
+ ParamID        : 0x19 (25) (TGAP_CONN_EST_SUPERV_TIMEOUT)
+Dump(Tx):
+0000:01 31 FE 01 19                                  .1...
+--------------------------------------------------------------------
+[12] : <Rx> - 07:08:34.225
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE31 (GAP_GetParamValue)
+ DataLength     : 0x02 (2)
+ ParamValue     : 0x0050 (80)
+Dump(Rx):
+0000:04 FF 08 7F 06 00 31 FE 02 50 00                ......1..P.
+--------------------------------------------------------------------
+[13] : <Rx> - 07:08:34.240
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE31 (GAP_GetParamValue)
+ DataLength     : 0x02 (2)
+ ParamValue     : 0x0000 (0)
+Dump(Rx):
+0000:04 FF 08 7F 06 00 31 FE 02 00 00                ......1....
+--------------------------------------------------------------------
+[14] : <Rx> - 07:08:34.272
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE31 (GAP_GetParamValue)
+ DataLength     : 0x02 (2)
+ ParamValue     : 0x07D0 (2000)
+Dump(Rx):
+0000:04 FF 08 7F 06 00 31 FE 02 D0 07                ......1....
+--------------------------------------------------------------------
+[15] : <Tx> - 07:08:35.162
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE04 (GAP_DeviceDiscoveryRequest)
+-Data Length    : 0x03 (3) byte(s)
+ Mode           : 0x03 (3) (All)
+ ActiveScan     : 0x01 (1) (Enable)
+ WhiteList      : 0x00 (0) (All)
+Dump(Tx):
+0000:01 04 FE 03 03 01 00                            .......
+--------------------------------------------------------------------
+[16] : <Rx> - 07:08:35.178
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE04 (GAP_DeviceDiscoveryRequest)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 04 FE 00                      .........
+--------------------------------------------------------------------
+[17] : <Rx> - 07:08:35.194
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x14 (20) bytes(s)
+ Event          : 0x060D (1549) (GAP_DeviceInformation)
+ Status         : 0x00 (0) (SUCCESS)
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 54:6C:0E:9B:57:1D
+ Rssi           : 0xD9 (217)
+ DataLength     : 0x07 (7)
+ Data           : 02:01:06:03:02:F0:FF
+Dump(Rx):
+0000:04 FF 14 0D 06 00 00 00 1D 57 9B 0E 6C 54 D9 07 .........W..lT..
+0010:02 01 06 03 02 F0 FF                            .......
+--------------------------------------------------------------------
+[18] : <Rx> - 07:08:35.209
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x10 (16) bytes(s)
+ Event          : 0x060D (1549) (GAP_DeviceInformation)
+ Status         : 0x00 (0) (SUCCESS)
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 43:56:90:A2:00:01
+ Rssi           : 0xB6 (182)
+ DataLength     : 0x03 (3)
+ Data           : 02:01:18
+Dump(Rx):
+0000:04 FF 10 0D 06 00 00 00 01 00 A2 90 56 43 B6 03 ............VC..
+0010:02 01 18                                        ...
+--------------------------------------------------------------------
+[19] : <Rx> - 07:08:35.475
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1D (29) bytes(s)
+ Event          : 0x060D (1549) (GAP_DeviceInformation)
+ Status         : 0x00 (0) (SUCCESS)
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 00:81:F9:6D:0F:FF
+ Rssi           : 0xDD (221)
+ DataLength     : 0x10 (16)
+ Data           : 02:01:06:0C:09:44:41:53:4E:20:76:31:2E:30:2E:30
+Dump(Rx):
+0000:04 FF 1D 0D 06 00 00 00 FF 0F 6D F9 81 00 DD 10 ..........m.....
+0010:02 01 06 0C 09 44 41 53 4E 20 76 31 2E 30 2E 30 .....DASN v1.0.0
+--------------------------------------------------------------------
+[20] : <Rx> - 07:08:35.491
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1F (31) bytes(s)
+ Event          : 0x060D (1549) (GAP_DeviceInformation)
+ Status         : 0x00 (0) (SUCCESS)
+ EventType      : 0x04 (4) (SCAN_RESPONSE)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 00:81:F9:6D:0F:FF
+ Rssi           : 0xDD (221)
+ DataLength     : 0x12 (18)
+ Data           : 11:06:00:00:00:00:00:00:00:B0:00:40:51:04:30:11:
+                  00:F0
+Dump(Rx):
+0000:04 FF 1F 0D 06 00 04 00 FF 0F 6D F9 81 00 DD 12 ..........m.....
+0010:11 06 00 00 00 00 00 00 00 B0 00 40 51 04 30 11 ...........@Q.0.
+0020:00 F0                                           ..
+--------------------------------------------------------------------
+[21] : <Rx> - 07:08:45.413
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1C (28) bytes(s)
+ Event          : 0x0601 (1537) (GAP_DeviceDiscoveryDone)
+ Status         : 0x00 (0) (SUCCESS)
+ NumDevs        : 0x03 (3)
+ Device #0
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 54:6C:0E:9B:57:1D
+ Device #1
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 43:56:90:A2:00:01
+ Device #2
+ EventType      : 0x00 (0) (CONN_UNDIRECT_AD)
+ AddrType       : 0x00 (0) (ADDRTYPE_PUBLIC)
+ Addr           : 00:81:F9:6D:0F:FF
+Dump(Rx):
+0000:04 FF 1C 01 06 00 03 00 00 1D 57 9B 0E 6C 54 00 ..........W..lT.
+0010:00 01 00 A2 90 56 43 00 00 FF 0F 6D F9 81 00    .....VC....m...
+--------------------------------------------------------------------
+[22] : <Tx> - 07:09:08.227
+-Type           : 0x01 (Command)
+-OpCode         : 0xFE09 (GAP_EstablishLinkRequest)
+-Data Length    : 0x09 (9) byte(s)
+ HighDutyCycle  : 0x00 (0) (Disable)
+ WhiteList      : 0x00 (0) (Disable)
+ AddrTypePeer   : 0x00 (0) (ADDRTYPE_PUBLIC)
+ PeerAddr       : 00:81:F9:6D:0F:FF
+Dump(Tx):
+0000:01 09 FE 09 00 00 00 FF 0F 6D F9 81 00          .........m...
+--------------------------------------------------------------------
+[23] : <Rx> - 07:09:08.258
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFE09 (GAP_EstablishLinkRequest)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 09 FE 00                      .........
+--------------------------------------------------------------------
+[24] : <Rx> - 07:09:09.181
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x14 (20) bytes(s)
+ Event          : 0x0605 (1541) (GAP_EstablishLink)
+ Status         : 0x00 (0) (SUCCESS)
+ DevAddrType    : 0x00 (0) (ADDRTYPE_PUBLIC)
+ DevAddr        : 00:81:F9:6D:0F:FF
+ ConnHandle     : 0x0000 (0)
+ ConnRole       : 0x08 (8) (
+                  Central)
+ ConnInterval   : 0x0050 (80)
+ ConnLatency    : 0x0000 (0)
+ ConnTimeout    : 0x07D0 (2000)
+ ClockAccuracy  : 0x00 (0)
+Dump(Rx):
+0000:04 FF 14 05 06 00 00 FF 0F 6D F9 81 00 00 00 08 .........m......
+0010:50 00 00 00 D0 07 00                            P......
+--------------------------------------------------------------------
+[25] : <Tx> - 07:09:09.181
+-Type           : 0x01 (Command)
+-OpCode         : 0x2022 (HCI_LE_SetDataLength)
+-Data Length    : 0x06 (6) byte(s)
+ Handle         : 0x0000 (0)
+ TxOctets       : 0x00FB (251)
+ TxTime         : 0x0848 (2120)
+Dump(Tx):
+0000:01 22 20 06 00 00 FB 00 48 08                   ." .....H.
+--------------------------------------------------------------------
+[26] : <Rx> - 07:09:09.212
+-Type           : 0x04 (Event)
+-EventCode      : 0x000E (HCI_CommandCompleteEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Packets        : 0x01 (1)
+ OpCode         : 0x2022 (HCI_LE_SetDataLength)
+ Status         : 0x00 (0) (SUCCESS)
+ Handle         : 0x0000 (0)
+Dump(Rx):
+0000:04 0E 06 01 22 20 00 00 00                      ...." ...
+--------------------------------------------------------------------
+[27] : <Rx> - 07:09:09.415
+-Type           : 0x04 (Event)
+-EventCode      : 0x003E (HCI_LE_GenericReportEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ LE Event Code  : 0x07 (7) (HCI_LE_DataLengthChangeEvent)
+ LE Event Code  : 0x07 (7) (HCI_LE_DataLengthChangeEvent)
+ Handle         : 0x0000 (0)
+ MaxTxOctets    : 0x00FB (251)
+ MaxTxTime      : 0x0848 (2120)
+ MaxRxOctets    : 0x00FB (251)
+ MaxRxTime      : 0x0848 (2120)
+Dump(Rx):
+0000:04 3E 0B 07 00 00 FB 00 48 08 FB 00 48 08       .>......H...H.
+--------------------------------------------------------------------
+[28] : <Info> - 07:09:09.431
+Device Connected
+Handle = 0x0000
+Addr Type = 0x00 (ADDRTYPE_PUBLIC)
+BDAddr = 00:81:F9:6D:0F:FF
+--------------------------------------------------------------------
+[29] : <Rx> - 07:09:15.322
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0D (13) bytes(s)
+ Event          : 0x0612 (1554) (GAP_LinkParamUpdateRequest)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ MinConnInt     : 0x0006 (6)
+ MaxConnInt     : 0x0006 (6)
+ ConnLatency    : 0x0000 (0)
+ ConnTimeout    : 0x00C8 (200)
+Dump(Rx):
+0000:04 FF 0D 12 06 00 00 00 06 00 06 00 00 00 C8 00 ................
+--------------------------------------------------------------------
+[30] : <Tx> - 07:09:15.322
+-Type           : 0x01 (Command)
+-OpCode         : 0x2020 (HCI_LE_RemoteConnectionParameterRequestReply)
+-Data Length    : 0x0E (14) byte(s)
+ Handle         : 0x0000 (0)
+ ConnIntervalMin: 0x0006 (6)
+ ConnIntervalMax: 0x0006 (6)
+ ConnLatency    : 0x0000 (0)
+ ConnTimeout    : 0x000A (10)
+ MinimumLength  : 0x0000 (0)
+ MaximumLength  : 0x0000 (0)
+Dump(Tx):
+0000:01 20 20 0E 00 00 06 00 06 00 00 00 0A 00 00 00 .  .............
+0010:00 00                                           ..
+--------------------------------------------------------------------
+[31] : <Rx> - 07:09:15.353
+-Type           : 0x04 (Event)
+-EventCode      : 0x000E (HCI_CommandCompleteEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Packets        : 0x01 (1)
+ OpCode         : 0x2020 (HCI_LE_RemoteConnectionParameterRequestReply)
+ Status         : 0x00 (0) (SUCCESS)
+ Handle         : 0x0000 (0)
+Dump(Rx):
+0000:04 0E 06 01 20 20 00 00 00                      ....  ...
+--------------------------------------------------------------------
+[32] : <Rx> - 07:09:16.010
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0607 (1543) (GAP_LinkParamUpdate)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ ConnInterval   : 0x0006 (6)
+ ConnLatency    : 0x0000 (0)
+ ConnTimeout    : 0x000A (10)
+Dump(Rx):
+0000:04 FF 0B 07 06 00 00 00 06 00 00 00 0A 00       ..............
+--------------------------------------------------------------------
+[33] : <Tx> - 07:18:44.656
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD90 (GATT_DiscAllPrimaryServices)
+-Data Length    : 0x02 (2) byte(s)
+ ConnHandle     : 0x0000 (0)
+Dump(Tx):
+0000:01 90 FD 02 00 00                               ......
+--------------------------------------------------------------------
+[34] : <Rx> - 07:18:44.671
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD90 (GATT_DiscAllPrimaryServices)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 90 FD 00                      .........
+--------------------------------------------------------------------
+[35] : <Rx> - 07:18:44.687
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Length         : 0x06 (6)
+ DataList
+ AttrHandle     : 0001
+ EndGrpHandle   : 0009
+ Value          : 00:18
+ AttrHandle     : 000A
+ EndGrpHandle   : 000A
+ Value          : 01:18
+ AttrHandle     : 000B
+ EndGrpHandle   : 001D
+ Value          : 0A:18
+
+Dump(Rx):
+0000:04 FF 19 11 05 00 00 00 13 06 01 00 09 00 00 18 ................
+0010:0A 00 0A 00 01 18 0B 00 1D 00 0A 18             ............
+--------------------------------------------------------------------
+[36] : <Rx> - 07:18:44.703
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Length         : 0x14 (20)
+ DataList
+ AttrHandle     : 001E
+ EndGrpHandle   : FFFF
+ Value          : 00:00:00:00:00:00:00:B0:00:40:51:04:30:11:00:F0
+                  
+
+Dump(Rx):
+0000:04 FF 1B 11 05 00 00 00 15 14 1E 00 FF FF 00 00 ................
+0010:00 00 00 00 00 B0 00 40 51 04 30 11 00 F0       .......@Q.0...
+--------------------------------------------------------------------
+[37] : <Rx> - 07:18:44.718
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x1A (26) (bleProcedureComplete)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 11 05 1A 00 00 00                      .........
+--------------------------------------------------------------------
+[38] : <Tx> - 07:18:44.718
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD84 (GATT_DiscAllCharDescs)
+-Data Length    : 0x06 (6) byte(s)
+ ConnHandle     : 0x0000 (0)
+ StartHandle    : 0x0001 (1)
+ EndHandle      : 0xFFFF (65535)
+Dump(Tx):
+0000:01 84 FD 06 00 00 01 00 FF FF                   ..........
+--------------------------------------------------------------------
+[39] : <Rx> - 07:18:44.780
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD84 (GATT_DiscAllCharDescs)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 84 FD 00                      .........
+--------------------------------------------------------------------
+[40] : <Rx> - 07:18:44.812
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0001
+ Uuid           : 00:28
+ Handle         : 0002
+ Uuid           : 03:28
+ Handle         : 0003
+ Uuid           : 00:2A
+ Handle         : 0004
+ Uuid           : 03:28
+ Handle         : 0005
+ Uuid           : 01:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 01 00 00 28 02 00 .............(..
+0010:03 28 03 00 00 2A 04 00 03 28 05 00 01 2A       .(...*...(...*
+--------------------------------------------------------------------
+[41] : <Rx> - 07:18:44.827
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0006
+ Uuid           : 03:28
+ Handle         : 0007
+ Uuid           : 04:2A
+ Handle         : 0008
+ Uuid           : 03:28
+ Handle         : 0009
+ Uuid           : C9:2A
+ Handle         : 000A
+ Uuid           : 00:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 06 00 03 28 07 00 .............(..
+0010:04 2A 08 00 03 28 09 00 C9 2A 0A 00 00 28       .*...(...*...(
+--------------------------------------------------------------------
+[42] : <Rx> - 07:18:44.843
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 000B
+ Uuid           : 00:28
+ Handle         : 000C
+ Uuid           : 03:28
+ Handle         : 000D
+ Uuid           : 23:2A
+ Handle         : 000E
+ Uuid           : 03:28
+ Handle         : 000F
+ Uuid           : 24:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 0B 00 00 28 0C 00 .............(..
+0010:03 28 0D 00 23 2A 0E 00 03 28 0F 00 24 2A       .(..#*...(..$*
+--------------------------------------------------------------------
+[43] : <Rx> - 07:18:44.859
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0010
+ Uuid           : 03:28
+ Handle         : 0011
+ Uuid           : 25:2A
+ Handle         : 0012
+ Uuid           : 03:28
+ Handle         : 0013
+ Uuid           : 26:2A
+ Handle         : 0014
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 10 00 03 28 11 00 .............(..
+0010:25 2A 12 00 03 28 13 00 26 2A 14 00 03 28       %*...(..&*...(
+--------------------------------------------------------------------
+[44] : <Rx> - 07:18:44.874
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0015
+ Uuid           : 27:2A
+ Handle         : 0016
+ Uuid           : 03:28
+ Handle         : 0017
+ Uuid           : 28:2A
+ Handle         : 0018
+ Uuid           : 03:28
+ Handle         : 0019
+ Uuid           : 29:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 15 00 27 2A 16 00 ............'*..
+0010:03 28 17 00 28 2A 18 00 03 28 19 00 29 2A       .(..(*...(..)*
+--------------------------------------------------------------------
+[45] : <Rx> - 07:18:44.890
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 001A
+ Uuid           : 03:28
+ Handle         : 001B
+ Uuid           : 2A:2A
+ Handle         : 001C
+ Uuid           : 03:28
+ Handle         : 001D
+ Uuid           : 50:2A
+ Handle         : 001E
+ Uuid           : 00:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 1A 00 03 28 1B 00 .............(..
+0010:2A 2A 1C 00 03 28 1D 00 50 2A 1E 00 00 28       **...(..P*...(
+--------------------------------------------------------------------
+[46] : <Rx> - 07:18:44.905
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 001F
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 1F 00 03 28       .............(
+--------------------------------------------------------------------
+[47] : <Rx> - 07:18:44.921
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0020
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:31:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 20 00 00 00 00 00 .......... .....
+0010:00 00 00 B0 00 40 51 04 31 11 00 F0             .....@Q.1...
+--------------------------------------------------------------------
+[48] : <Rx> - 07:18:44.937
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0021
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 21 00 03 28       ..........!..(
+--------------------------------------------------------------------
+[49] : <Rx> - 07:18:44.952
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0022
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:32:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 22 00 00 00 00 00 ..........".....
+0010:00 00 00 B0 00 40 51 04 32 11 00 F0             .....@Q.2...
+--------------------------------------------------------------------
+[50] : <Rx> - 07:18:44.968
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0F (15) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x09 (9)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0023
+ Uuid           : 02:29
+ Handle         : 0024
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0F 05 05 00 00 00 09 01 23 00 02 29 24 00 ..........#..)$.
+0010:03 28                                           .(
+--------------------------------------------------------------------
+[51] : <Rx> - 07:18:44.984
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0025
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:33:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 25 00 00 00 00 00 ..........%.....
+0010:00 00 00 B0 00 40 51 04 33 11 00 F0             .....@Q.3...
+--------------------------------------------------------------------
+[52] : <Rx> - 07:18:44.999
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0026
+ Uuid           : 02:29
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 26 00 02 29       ..........&..)
+--------------------------------------------------------------------
+[53] : <Rx> - 07:18:45.015
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x1A (26) (bleProcedureComplete)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 05 05 1A 00 00 00                      .........
+--------------------------------------------------------------------
+[54] : <Tx> - 07:20:12.696
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD90 (GATT_DiscAllPrimaryServices)
+-Data Length    : 0x02 (2) byte(s)
+ ConnHandle     : 0x0000 (0)
+Dump(Tx):
+0000:01 90 FD 02 00 00                               ......
+--------------------------------------------------------------------
+[55] : <Rx> - 07:20:12.712
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD90 (GATT_DiscAllPrimaryServices)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 90 FD 00                      .........
+--------------------------------------------------------------------
+[56] : <Rx> - 07:20:12.758
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Length         : 0x06 (6)
+ DataList
+ AttrHandle     : 0001
+ EndGrpHandle   : 0009
+ Value          : 00:18
+ AttrHandle     : 000A
+ EndGrpHandle   : 000A
+ Value          : 01:18
+ AttrHandle     : 000B
+ EndGrpHandle   : 001D
+ Value          : 0A:18
+
+Dump(Rx):
+0000:04 FF 19 11 05 00 00 00 13 06 01 00 09 00 00 18 ................
+0010:0A 00 0A 00 01 18 0B 00 1D 00 0A 18             ............
+--------------------------------------------------------------------
+[57] : <Rx> - 07:20:12.774
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Length         : 0x14 (20)
+ DataList
+ AttrHandle     : 001E
+ EndGrpHandle   : FFFF
+ Value          : 00:00:00:00:00:00:00:B0:00:40:51:04:30:11:00:F0
+                  
+
+Dump(Rx):
+0000:04 FF 1B 11 05 00 00 00 15 14 1E 00 FF FF 00 00 ................
+0010:00 00 00 00 00 B0 00 40 51 04 30 11 00 F0       .......@Q.0...
+--------------------------------------------------------------------
+[58] : <Rx> - 07:20:12.789
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x0511 (1297) (ATT_ReadByGrpTypeRsp)
+ Status         : 0x1A (26) (bleProcedureComplete)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 11 05 1A 00 00 00                      .........
+--------------------------------------------------------------------
+[59] : <Tx> - 07:20:12.789
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD84 (GATT_DiscAllCharDescs)
+-Data Length    : 0x06 (6) byte(s)
+ ConnHandle     : 0x0000 (0)
+ StartHandle    : 0x0001 (1)
+ EndHandle      : 0xFFFF (65535)
+Dump(Tx):
+0000:01 84 FD 06 00 00 01 00 FF FF                   ..........
+--------------------------------------------------------------------
+[60] : <Rx> - 07:20:12.868
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD84 (GATT_DiscAllCharDescs)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 84 FD 00                      .........
+--------------------------------------------------------------------
+[61] : <Rx> - 07:20:12.883
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0001
+ Uuid           : 00:28
+ Handle         : 0002
+ Uuid           : 03:28
+ Handle         : 0003
+ Uuid           : 00:2A
+ Handle         : 0004
+ Uuid           : 03:28
+ Handle         : 0005
+ Uuid           : 01:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 01 00 00 28 02 00 .............(..
+0010:03 28 03 00 00 2A 04 00 03 28 05 00 01 2A       .(...*...(...*
+--------------------------------------------------------------------
+[62] : <Rx> - 07:20:12.914
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0006
+ Uuid           : 03:28
+ Handle         : 0007
+ Uuid           : 04:2A
+ Handle         : 0008
+ Uuid           : 03:28
+ Handle         : 0009
+ Uuid           : C9:2A
+ Handle         : 000A
+ Uuid           : 00:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 06 00 03 28 07 00 .............(..
+0010:04 2A 08 00 03 28 09 00 C9 2A 0A 00 00 28       .*...(...*...(
+--------------------------------------------------------------------
+[63] : <Rx> - 07:20:12.930
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 000B
+ Uuid           : 00:28
+ Handle         : 000C
+ Uuid           : 03:28
+ Handle         : 000D
+ Uuid           : 23:2A
+ Handle         : 000E
+ Uuid           : 03:28
+ Handle         : 000F
+ Uuid           : 24:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 0B 00 00 28 0C 00 .............(..
+0010:03 28 0D 00 23 2A 0E 00 03 28 0F 00 24 2A       .(..#*...(..$*
+--------------------------------------------------------------------
+[64] : <Rx> - 07:20:12.946
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0010
+ Uuid           : 03:28
+ Handle         : 0011
+ Uuid           : 25:2A
+ Handle         : 0012
+ Uuid           : 03:28
+ Handle         : 0013
+ Uuid           : 26:2A
+ Handle         : 0014
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 10 00 03 28 11 00 .............(..
+0010:25 2A 12 00 03 28 13 00 26 2A 14 00 03 28       %*...(..&*...(
+--------------------------------------------------------------------
+[65] : <Rx> - 07:20:12.961
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0015
+ Uuid           : 27:2A
+ Handle         : 0016
+ Uuid           : 03:28
+ Handle         : 0017
+ Uuid           : 28:2A
+ Handle         : 0018
+ Uuid           : 03:28
+ Handle         : 0019
+ Uuid           : 29:2A
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 15 00 27 2A 16 00 ............'*..
+0010:03 28 17 00 28 2A 18 00 03 28 19 00 29 2A       .(..(*...(..)*
+--------------------------------------------------------------------
+[66] : <Rx> - 07:20:12.977
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1B (27) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x15 (21)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 001A
+ Uuid           : 03:28
+ Handle         : 001B
+ Uuid           : 2A:2A
+ Handle         : 001C
+ Uuid           : 03:28
+ Handle         : 001D
+ Uuid           : 50:2A
+ Handle         : 001E
+ Uuid           : 00:28
+Dump(Rx):
+0000:04 FF 1B 05 05 00 00 00 15 01 1A 00 03 28 1B 00 .............(..
+0010:2A 2A 1C 00 03 28 1D 00 50 2A 1E 00 00 28       **...(..P*...(
+--------------------------------------------------------------------
+[67] : <Rx> - 07:20:12.993
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 001F
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 1F 00 03 28       .............(
+--------------------------------------------------------------------
+[68] : <Rx> - 07:20:13.008
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0020
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:31:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 20 00 00 00 00 00 .......... .....
+0010:00 00 00 B0 00 40 51 04 31 11 00 F0             .....@Q.1...
+--------------------------------------------------------------------
+[69] : <Rx> - 07:20:13.024
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0021
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 21 00 03 28       ..........!..(
+--------------------------------------------------------------------
+[70] : <Rx> - 07:20:13.039
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0022
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:32:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 22 00 00 00 00 00 ..........".....
+0010:00 00 00 B0 00 40 51 04 32 11 00 F0             .....@Q.2...
+--------------------------------------------------------------------
+[71] : <Rx> - 07:20:13.055
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0F (15) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x09 (9)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0023
+ Uuid           : 02:29
+ Handle         : 0024
+ Uuid           : 03:28
+Dump(Rx):
+0000:04 FF 0F 05 05 00 00 00 09 01 23 00 02 29 24 00 ..........#..)$.
+0010:03 28                                           .(
+--------------------------------------------------------------------
+[72] : <Rx> - 07:20:13.071
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Format         : 0x02 (2) (HANDLE_UUID_TYPE__handles_and_128_bit_UUIDs)
+ Handle         : 0025
+ Uuid           : 00:00:00:00:00:00:00:B0:00:40:51:04:33:11:00:F0
+                  
+Dump(Rx):
+0000:04 FF 19 05 05 00 00 00 13 02 25 00 00 00 00 00 ..........%.....
+0010:00 00 00 B0 00 40 51 04 33 11 00 F0             .....@Q.3...
+--------------------------------------------------------------------
+[73] : <Rx> - 07:20:13.086
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Format         : 0x01 (1) (HANDLE_BT_UUID_TYPE__handles_and_16_bit_Bluetooth_UUIDs)
+ Handle         : 0026
+ Uuid           : 02:29
+Dump(Rx):
+0000:04 FF 0B 05 05 00 00 00 05 01 26 00 02 29       ..........&..)
+--------------------------------------------------------------------
+[74] : <Rx> - 07:20:13.102
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x0505 (1285) (ATT_FindInfoRsp)
+ Status         : 0x1A (26) (bleProcedureComplete)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 05 05 1A 00 00 00                      .........
+--------------------------------------------------------------------
+[75] : <Tx> - 07:20:13.102
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0001 (1)
+Dump(Tx):
+0000:01 8A FD 04 00 00 01 00                         ........
+--------------------------------------------------------------------
+[76] : <Rx> - 07:20:13.274
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[77] : <Rx> - 07:20:13.321
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 00:18
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 00 18                ...........
+--------------------------------------------------------------------
+[78] : <Tx> - 07:20:13.321
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0002 (2)
+Dump(Tx):
+0000:01 8A FD 04 00 00 02 00                         ........
+--------------------------------------------------------------------
+[79] : <Rx> - 07:20:13.368
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[80] : <Rx> - 07:20:13.399
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 0A:03:00:00:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 0A 03 00 00 2A       .............*
+--------------------------------------------------------------------
+[81] : <Tx> - 07:20:13.399
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0003 (3)
+Dump(Tx):
+0000:01 8A FD 04 00 00 03 00                         ........
+--------------------------------------------------------------------
+[82] : <Rx> - 07:20:13.462
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[83] : <Rx> - 07:20:13.508
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x12 (18) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x0C (12)
+ Value          : 44:41:53:4E:20:56:2E:31:2E:30:2E:30
+Dump(Rx):
+0000:04 FF 12 0B 05 00 00 00 0C 44 41 53 4E 20 56 2E .........DASN V.
+0010:31 2E 30 2E 30                                  1.0.0
+--------------------------------------------------------------------
+[84] : <Tx> - 07:20:13.508
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0004 (4)
+Dump(Tx):
+0000:01 8A FD 04 00 00 04 00                         ........
+--------------------------------------------------------------------
+[85] : <Rx> - 07:20:13.555
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[86] : <Rx> - 07:20:13.602
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 0A:05:00:01:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 0A 05 00 01 2A       .............*
+--------------------------------------------------------------------
+[87] : <Tx> - 07:20:13.602
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0005 (5)
+Dump(Tx):
+0000:01 8A FD 04 00 00 05 00                         ........
+--------------------------------------------------------------------
+[88] : <Rx> - 07:20:13.649
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[89] : <Rx> - 07:20:13.680
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 00:00
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 00 00                ...........
+--------------------------------------------------------------------
+[90] : <Tx> - 07:20:13.680
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0006 (6)
+Dump(Tx):
+0000:01 8A FD 04 00 00 06 00                         ........
+--------------------------------------------------------------------
+[91] : <Rx> - 07:20:13.743
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[92] : <Rx> - 07:20:13.759
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:07:00:04:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 07 00 04 2A       .............*
+--------------------------------------------------------------------
+[93] : <Tx> - 07:20:13.759
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0007 (7)
+Dump(Tx):
+0000:01 8A FD 04 00 00 07 00                         ........
+--------------------------------------------------------------------
+[94] : <Rx> - 07:20:13.837
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[95] : <Rx> - 07:20:13.852
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0E (14) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x08 (8)
+ Value          : 50:00:A0:00:00:00:E8:03
+Dump(Rx):
+0000:04 FF 0E 0B 05 00 00 00 08 50 00 A0 00 00 00 E8 .........P......
+0010:03                                              .
+--------------------------------------------------------------------
+[96] : <Tx> - 07:20:13.852
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0008 (8)
+Dump(Tx):
+0000:01 8A FD 04 00 00 08 00                         ........
+--------------------------------------------------------------------
+[97] : <Rx> - 07:20:13.915
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[98] : <Rx> - 07:20:13.962
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:09:00:C9:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 09 00 C9 2A       .............*
+--------------------------------------------------------------------
+[99] : <Tx> - 07:20:13.962
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0009 (9)
+Dump(Tx):
+0000:01 8A FD 04 00 00 09 00                         ........
+--------------------------------------------------------------------
+[100] : <Rx> - 07:20:14.024
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[101] : <Rx> - 07:20:14.040
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x07 (7) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x01 (1)
+ Value          : 00
+Dump(Rx):
+0000:04 FF 07 0B 05 00 00 00 01 00                   ..........
+--------------------------------------------------------------------
+[102] : <Tx> - 07:20:14.040
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000A (10)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0A 00                         ........
+--------------------------------------------------------------------
+[103] : <Rx> - 07:20:14.102
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[104] : <Rx> - 07:20:14.149
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 01:18
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 01 18                ...........
+--------------------------------------------------------------------
+[105] : <Tx> - 07:20:14.149
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000B (11)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0B 00                         ........
+--------------------------------------------------------------------
+[106] : <Rx> - 07:20:14.196
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[107] : <Rx> - 07:20:14.243
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 0A:18
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 0A 18                ...........
+--------------------------------------------------------------------
+[108] : <Tx> - 07:20:14.243
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000C (12)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0C 00                         ........
+--------------------------------------------------------------------
+[109] : <Rx> - 07:20:14.305
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[110] : <Rx> - 07:20:14.337
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:0D:00:23:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 0D 00 23 2A       ............#*
+--------------------------------------------------------------------
+[111] : <Tx> - 07:20:14.337
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000D (13)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0D 00                         ........
+--------------------------------------------------------------------
+[112] : <Rx> - 07:20:14.415
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[113] : <Rx> - 07:20:14.462
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0E (14) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x08 (8)
+ Value          : FF:0F:6D:00:00:F9:81:00
+Dump(Rx):
+0000:04 FF 0E 0B 05 00 00 00 08 FF 0F 6D 00 00 F9 81 ...........m....
+0010:00                                              .
+--------------------------------------------------------------------
+[114] : <Tx> - 07:20:14.462
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000E (14)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0E 00                         ........
+--------------------------------------------------------------------
+[115] : <Rx> - 07:20:14.509
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[116] : <Rx> - 07:20:14.555
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:0F:00:24:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 0F 00 24 2A       ............$*
+--------------------------------------------------------------------
+[117] : <Tx> - 07:20:14.555
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x000F (15)
+Dump(Tx):
+0000:01 8A FD 04 00 00 0F 00                         ........
+--------------------------------------------------------------------
+[118] : <Rx> - 07:20:14.602
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[119] : <Rx> - 07:20:14.649
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x12 (18) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x0C (12)
+ Value          : 4D:6F:64:65:6C:20:4E:75:6D:62:65:72
+Dump(Rx):
+0000:04 FF 12 0B 05 00 00 00 0C 4D 6F 64 65 6C 20 4E .........Model N
+0010:75 6D 62 65 72                                  umber
+--------------------------------------------------------------------
+[120] : <Tx> - 07:20:14.649
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0010 (16)
+Dump(Tx):
+0000:01 8A FD 04 00 00 10 00                         ........
+--------------------------------------------------------------------
+[121] : <Rx> - 07:20:14.696
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[122] : <Rx> - 07:20:14.743
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:11:00:25:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 11 00 25 2A       ............%*
+--------------------------------------------------------------------
+[123] : <Tx> - 07:20:14.743
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0011 (17)
+Dump(Tx):
+0000:01 8A FD 04 00 00 11 00                         ........
+--------------------------------------------------------------------
+[124] : <Rx> - 07:20:14.790
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[125] : <Rx> - 07:20:14.837
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x13 (19) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x0D (13)
+ Value          : 53:65:72:69:61:6C:20:4E:75:6D:62:65:72
+Dump(Rx):
+0000:04 FF 13 0B 05 00 00 00 0D 53 65 72 69 61 6C 20 .........Serial 
+0010:4E 75 6D 62 65 72                               Number
+--------------------------------------------------------------------
+[126] : <Tx> - 07:20:14.837
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0012 (18)
+Dump(Tx):
+0000:01 8A FD 04 00 00 12 00                         ........
+--------------------------------------------------------------------
+[127] : <Rx> - 07:20:14.884
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[128] : <Rx> - 07:20:14.930
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:13:00:26:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 13 00 26 2A       ............&*
+--------------------------------------------------------------------
+[129] : <Tx> - 07:20:14.930
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0013 (19)
+Dump(Tx):
+0000:01 8A FD 04 00 00 13 00                         ........
+--------------------------------------------------------------------
+[130] : <Rx> - 07:20:14.977
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[131] : <Rx> - 07:20:15.024
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x17 (23) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x11 (17)
+ Value          : 46:69:72:6D:77:61:72:65:20:52:65:76:69:73:69:6F:
+                  6E
+Dump(Rx):
+0000:04 FF 17 0B 05 00 00 00 11 46 69 72 6D 77 61 72 .........Firmwar
+0010:65 20 52 65 76 69 73 69 6F 6E                   e Revision
+--------------------------------------------------------------------
+[132] : <Tx> - 07:20:15.024
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0014 (20)
+Dump(Tx):
+0000:01 8A FD 04 00 00 14 00                         ........
+--------------------------------------------------------------------
+[133] : <Rx> - 07:20:15.071
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[134] : <Rx> - 07:20:15.118
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:15:00:27:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 15 00 27 2A       ............'*
+--------------------------------------------------------------------
+[135] : <Tx> - 07:20:15.118
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0015 (21)
+Dump(Tx):
+0000:01 8A FD 04 00 00 15 00                         ........
+--------------------------------------------------------------------
+[136] : <Rx> - 07:20:15.165
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[137] : <Rx> - 07:20:15.212
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x17 (23) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x11 (17)
+ Value          : 48:61:72:64:77:61:72:65:20:52:65:76:69:73:69:6F:
+                  6E
+Dump(Rx):
+0000:04 FF 17 0B 05 00 00 00 11 48 61 72 64 77 61 72 .........Hardwar
+0010:65 20 52 65 76 69 73 69 6F 6E                   e Revision
+--------------------------------------------------------------------
+[138] : <Tx> - 07:20:15.212
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0016 (22)
+Dump(Tx):
+0000:01 8A FD 04 00 00 16 00                         ........
+--------------------------------------------------------------------
+[139] : <Rx> - 07:20:15.259
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[140] : <Rx> - 07:20:15.305
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:17:00:28:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 17 00 28 2A       ............(*
+--------------------------------------------------------------------
+[141] : <Tx> - 07:20:15.305
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0017 (23)
+Dump(Tx):
+0000:01 8A FD 04 00 00 17 00                         ........
+--------------------------------------------------------------------
+[142] : <Rx> - 07:20:15.352
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[143] : <Rx> - 07:20:15.399
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x17 (23) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x11 (17)
+ Value          : 53:6F:66:74:77:61:72:65:20:52:65:76:69:73:69:6F:
+                  6E
+Dump(Rx):
+0000:04 FF 17 0B 05 00 00 00 11 53 6F 66 74 77 61 72 .........Softwar
+0010:65 20 52 65 76 69 73 69 6F 6E                   e Revision
+--------------------------------------------------------------------
+[144] : <Tx> - 07:20:15.399
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0018 (24)
+Dump(Tx):
+0000:01 8A FD 04 00 00 18 00                         ........
+--------------------------------------------------------------------
+[145] : <Rx> - 07:20:15.446
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[146] : <Rx> - 07:20:15.493
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:19:00:29:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 19 00 29 2A       ............)*
+--------------------------------------------------------------------
+[147] : <Tx> - 07:20:15.493
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0019 (25)
+Dump(Tx):
+0000:01 8A FD 04 00 00 19 00                         ........
+--------------------------------------------------------------------
+[148] : <Rx> - 07:20:15.540
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[149] : <Rx> - 07:20:15.587
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x17 (23) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x11 (17)
+ Value          : 4D:61:6E:75:66:61:63:74:75:72:65:72:20:4E:61:6D:
+                  65
+Dump(Rx):
+0000:04 FF 17 0B 05 00 00 00 11 4D 61 6E 75 66 61 63 .........Manufac
+0010:74 75 72 65 72 20 4E 61 6D 65                   turer Name
+--------------------------------------------------------------------
+[150] : <Tx> - 07:20:15.587
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001A (26)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1A 00                         ........
+--------------------------------------------------------------------
+[151] : <Rx> - 07:20:15.634
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[152] : <Rx> - 07:20:15.680
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:1B:00:2A:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 1B 00 2A 2A       ............**
+--------------------------------------------------------------------
+[153] : <Tx> - 07:20:15.680
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001B (27)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1B 00                         ........
+--------------------------------------------------------------------
+[154] : <Rx> - 07:20:15.727
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[155] : <Rx> - 07:20:15.774
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x14 (20) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x0E (14)
+ Value          : FE:00:65:78:70:65:72:69:6D:65:6E:74:61:6C
+Dump(Rx):
+0000:04 FF 14 0B 05 00 00 00 0E FE 00 65 78 70 65 72 ...........exper
+0010:69 6D 65 6E 74 61 6C                            imental
+--------------------------------------------------------------------
+[156] : <Tx> - 07:20:15.774
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001C (28)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1C 00                         ........
+--------------------------------------------------------------------
+[157] : <Rx> - 07:20:15.821
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[158] : <Rx> - 07:20:15.868
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0B (11) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x05 (5)
+ Value          : 02:1D:00:50:2A
+Dump(Rx):
+0000:04 FF 0B 0B 05 00 00 00 05 02 1D 00 50 2A       ............P*
+--------------------------------------------------------------------
+[159] : <Tx> - 07:20:15.868
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001D (29)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1D 00                         ........
+--------------------------------------------------------------------
+[160] : <Rx> - 07:20:15.915
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[161] : <Rx> - 07:20:15.962
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0D (13) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x07 (7)
+ Value          : 01:0D:00:00:00:10:01
+Dump(Rx):
+0000:04 FF 0D 0B 05 00 00 00 07 01 0D 00 00 00 10 01 ................
+--------------------------------------------------------------------
+[162] : <Tx> - 07:20:15.962
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001E (30)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1E 00                         ........
+--------------------------------------------------------------------
+[163] : <Rx> - 07:20:16.009
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[164] : <Rx> - 07:20:16.055
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x16 (22) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x10 (16)
+ Value          : 00:00:00:00:00:00:00:B0:00:40:51:04:30:11:00:F0
+Dump(Rx):
+0000:04 FF 16 0B 05 00 00 00 10 00 00 00 00 00 00 00 ................
+0010:B0 00 40 51 04 30 11 00 F0                      ..@Q.0...
+--------------------------------------------------------------------
+[165] : <Tx> - 07:20:16.055
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x001F (31)
+Dump(Tx):
+0000:01 8A FD 04 00 00 1F 00                         ........
+--------------------------------------------------------------------
+[166] : <Rx> - 07:20:16.102
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[167] : <Rx> - 07:20:16.149
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Value          : 08:20:00:00:00:00:00:00:00:00:B0:00:40:51:04:31:
+                  11:00:F0
+Dump(Rx):
+0000:04 FF 19 0B 05 00 00 00 13 08 20 00 00 00 00 00 .......... .....
+0010:00 00 00 B0 00 40 51 04 31 11 00 F0             .....@Q.1...
+--------------------------------------------------------------------
+[168] : <Tx> - 07:20:16.149
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0020 (32)
+Dump(Tx):
+0000:01 8A FD 04 00 00 20 00                         ...... .
+--------------------------------------------------------------------
+[169] : <Rx> - 07:20:16.196
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[170] : <Rx> - 07:20:16.243
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x0A (10) bytes(s)
+ Event          : 0x0501 (1281) (ATT_ErrorRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x04 (4)
+ ReqOpCode      : 0x0A (ATT_ReadReq)
+ Handle         : 0x0020 (32)
+ ErrorCode      : 0x02 (2) (READ_NOT_PERMITTED)
+Dump(Rx):
+0000:04 FF 0A 01 05 00 00 00 04 0A 20 00 02          .......... ..
+--------------------------------------------------------------------
+[171] : <Tx> - 07:20:16.243
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0021 (33)
+Dump(Tx):
+0000:01 8A FD 04 00 00 21 00                         ......!.
+--------------------------------------------------------------------
+[172] : <Rx> - 07:20:16.290
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[173] : <Rx> - 07:20:16.337
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Value          : 12:22:00:00:00:00:00:00:00:00:B0:00:40:51:04:32:
+                  11:00:F0
+Dump(Rx):
+0000:04 FF 19 0B 05 00 00 00 13 12 22 00 00 00 00 00 ..........".....
+0010:00 00 00 B0 00 40 51 04 32 11 00 F0             .....@Q.2...
+--------------------------------------------------------------------
+[174] : <Tx> - 07:20:16.337
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0022 (34)
+Dump(Tx):
+0000:01 8A FD 04 00 00 22 00                         ......".
+--------------------------------------------------------------------
+[175] : <Rx> - 07:20:16.384
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[176] : <Rx> - 07:20:16.431
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x07 (7) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x01 (1)
+ Value          : 00
+Dump(Rx):
+0000:04 FF 07 0B 05 00 00 00 01 00                   ..........
+--------------------------------------------------------------------
+[177] : <Tx> - 07:20:16.431
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0023 (35)
+Dump(Tx):
+0000:01 8A FD 04 00 00 23 00                         ......#.
+--------------------------------------------------------------------
+[178] : <Rx> - 07:20:16.477
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[179] : <Rx> - 07:20:16.524
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 00:00
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 00 00                ...........
+--------------------------------------------------------------------
+[180] : <Tx> - 07:20:16.524
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0024 (36)
+Dump(Tx):
+0000:01 8A FD 04 00 00 24 00                         ......$.
+--------------------------------------------------------------------
+[181] : <Rx> - 07:20:16.571
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[182] : <Rx> - 07:20:16.618
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x19 (25) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x13 (19)
+ Value          : 16:25:00:00:00:00:00:00:00:00:B0:00:40:51:04:33:
+                  11:00:F0
+Dump(Rx):
+0000:04 FF 19 0B 05 00 00 00 13 16 25 00 00 00 00 00 ..........%.....
+0010:00 00 00 B0 00 40 51 04 33 11 00 F0             .....@Q.3...
+--------------------------------------------------------------------
+[183] : <Tx> - 07:20:16.618
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0025 (37)
+Dump(Tx):
+0000:01 8A FD 04 00 00 25 00                         ......%.
+--------------------------------------------------------------------
+[184] : <Rx> - 07:20:16.665
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[185] : <Rx> - 07:20:16.712
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x1C (28) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x16 (22)
+ Value          : 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:
+                  00:00:00:00:00:00
+Dump(Rx):
+0000:04 FF 1C 0B 05 00 00 00 16 00 00 00 00 00 00 00 ................
+0010:00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ...............
+--------------------------------------------------------------------
+[186] : <Tx> - 07:20:16.712
+-Type           : 0x01 (Command)
+-OpCode         : 0xFD8A (GATT_ReadCharValue)
+-Data Length    : 0x04 (4) byte(s)
+ ConnHandle     : 0x0000 (0)
+ Handle         : 0x0026 (38)
+Dump(Tx):
+0000:01 8A FD 04 00 00 26 00                         ......&.
+--------------------------------------------------------------------
+[187] : <Rx> - 07:20:16.774
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x06 (6) bytes(s)
+ Event          : 0x067F (1663) (GAP_HCI_ExtentionCommandStatus)
+ Status         : 0x00 (0) (SUCCESS)
+ OpCode         : 0xFD8A (GATT_ReadCharValue)
+ DataLength     : 0x00 (0)
+Dump(Rx):
+0000:04 FF 06 7F 06 00 8A FD 00                      .........
+--------------------------------------------------------------------
+[188] : <Rx> - 07:20:16.790
+-Type           : 0x04 (Event)
+-EventCode      : 0x00FF (HCI_LE_ExtEvent)
+-Data Length    : 0x08 (8) bytes(s)
+ Event          : 0x050B (1291) (ATT_ReadRsp)
+ Status         : 0x00 (0) (SUCCESS)
+ ConnHandle     : 0x0000 (0)
+ PduLen         : 0x02 (2)
+ Value          : 00:00
+Dump(Rx):
+0000:04 FF 08 0B 05 00 00 00 02 00 00                ...........
+--------------------------------------------------------------------
